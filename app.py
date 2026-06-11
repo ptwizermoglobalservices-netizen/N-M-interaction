@@ -123,7 +123,7 @@ if st.button("Generate Interaction Diagram"):
             'C': C,
             "C'": Cp,
             'T': T,
-            'Nu (N)': Nu,
+            'Nu (KN)': Nu/1000,
             'Mu (kN.m)': Mu
         })
 
@@ -142,7 +142,7 @@ if st.button("Generate Interaction Diagram"):
         'C': b * H * fcd,
         "C'": fyd * Asp,
         'T': -fyd * As,
-        'Nu (N)': Nu,
+        'Nu (KN)': Nu/1000,
         'Mu (kN.m)': Mu
     })
 
@@ -169,7 +169,7 @@ if st.button("Generate Interaction Diagram"):
 
     plt.plot(
         df['Mu (kN.m)'],
-        df['Nu (N)'],
+        df['Nu (KN)'],
         '-o',
         markersize=3
     )
