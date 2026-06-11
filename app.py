@@ -80,7 +80,7 @@ if st.button("Generate Interaction Diagram"):
         'C': 0.0,
         "C'": -fyd * Asp,
         'T': fyd * As,
-        'Nu (N)': Nu,
+        'Nu (KN)': Nu/1000,
         'Mu (kN.m)': Mu
     })
 
