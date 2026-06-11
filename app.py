@@ -175,7 +175,7 @@ if st.button("Generate Interaction Diagram"):
     )
 
     plt.xlabel('Moment Mu (kN.m)')
-    plt.ylabel('Axial Force Nu (N)')
+    plt.ylabel('Axial Force Nu (KN)')
     plt.title('N-M Interaction Diagram')
 
     plt.grid(True)
