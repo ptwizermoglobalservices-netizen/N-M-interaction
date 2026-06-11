@@ -75,11 +75,11 @@ if st.button("Generate Interaction Diagram"):
 
     results.append({
         'Xc': -np.inf,
-        'sigma_s': -fyd,
-        "sigma_s'": -fyd,
+        'sigma_s': -fyd/1000,
+        "sigma_s'": -fyd/1000,
         'C': 0.0,
-        "C'": -fyd * Asp,
-        'T': fyd * As,
+        "C'": -fyd * Asp/1000,
+        'T': fyd * As/1000,
         'Nu (KN)': Nu/1000,
         'Mu (kN.m)': Mu
     })
@@ -118,11 +118,11 @@ if st.button("Generate Interaction Diagram"):
 
         results.append({
             'Xc': Xc,
-            'sigma_s': sigma_s,
-            "sigma_s'": sigma_sp,
-            'C': C,
-            "C'": Cp,
-            'T': T,
+            'sigma_s': sigma_s/1000,
+            "sigma_s'": sigma_sp/1000,
+            'C': C/1000,
+            "C'": Cp/1000,
+            'T': T/1000,
             'Nu (KN)': Nu/1000,
             'Mu (kN.m)': Mu
         })
@@ -137,11 +137,11 @@ if st.button("Generate Interaction Diagram"):
 
     results.append({
         'Xc': np.inf,
-        'sigma_s': fyd,
-        "sigma_s'": fyd,
-        'C': b * H * fcd,
-        "C'": fyd * Asp,
-        'T': -fyd * As,
+        'sigma_s': fyd/1000,
+        "sigma_s'": fyd/1000,
+        'C': b * H * fcd/1000,
+        "C'": fyd * Asp/1000,
+        'T': -fyd * As/1000,
         'Nu (KN)': Nu/1000,
         'Mu (kN.m)': Mu
     })
